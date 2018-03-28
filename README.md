@@ -2,7 +2,7 @@ THIS IS A SIMPLE COMPILER BY:
 Curtis P. Hohl - 11/2/2017.
 
 The language to be compiler is very simple.  It allows variable declarations (INT FLOAT STRING), 
-simple addition and subtraction, and standard operators (== != <= >= >  <).  Detailed syntax can be seen in scan.jflex.
+simple addition and subtraction, standard operators (== != <= >= >  <), and PRINT.  Detailed syntax can be seen in scan.jflex.
 
 This program uses byaccj and jflex. The output is in MIPS Assembly language and can be run with lib/Mars4_5.jar
 
