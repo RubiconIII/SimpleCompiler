@@ -1,0 +1,16 @@
+PROGRAM example;
+INT x = 1;
+INT y = 3;
+INT i = x + y;
+PRINT (i)
+BEGIN 
+	STRING s = "and";
+	PRINT (s)
+	BEGIN
+		FLOAT a = 1.1;
+		FLOAT b = 2.2;
+		FLOAT f = a + b;
+		PRINT (f)
+	END
+END
+.
