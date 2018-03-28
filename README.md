@@ -7,7 +7,8 @@ simple addition and subtraction, standard operators (== != <= >= >  <), and PRIN
 This program uses byaccj and jflex. The output is in MIPS Assembly language and can be run with lib/Mars4_5.jar
 
 To use the program, run the Makefile, which will generate .java and .class files.
-Then run in a UNIX terminal the command: java Parser (inputFileNameHere).txt
+Then run in a UNIX terminal the command: java Parser (inputFileNameHere).txt.
+
 I've included a sample input file: m4-input.txt
 
 Happy compiling!
