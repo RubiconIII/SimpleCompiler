@@ -30,10 +30,6 @@
 
 %%
 
-/********  YOUR CODE TO ALLOW COMMENTS ****************************/
-/** Comments can be in the form of /* */ or // until end of line **/
-/******************************************************************/
-
 ("/*" (.*[\r\n])|.* "*/")	{ /* allow multi line comments */ }
 
 ("//" .*)	            { /* single line comment */ }
