@@ -47,8 +47,7 @@ stmt    :   type ID ASSIGN expr   {
                                     node.type = type;
                                     $$ = node;
 
-                                    /** MODIFY AS APPROPRIATE **/
-                                    
+                                                                 
                                     if ($4.operation.equals("NONE")) {
                                         // update assembly here
                                         if (type.equals("INT")) {
@@ -148,7 +147,7 @@ stmt    :   type ID ASSIGN expr   {
                                         saveTypeSymbol($2);
                                     } 
                                   }
-        |   ID ASSIGN expr        { /*** YOUR CODE HERE ***/
+        |   ID ASSIGN expr        { 
                                     $$ = makeNode($2.token, $1, $3);
                                     if (!isDeclaredLocally($1) && !canRetrieveSymbol($1)) { 
                                             yyerror($1.token + " is not declared!");
@@ -249,12 +248,12 @@ expr    :   expr PLUS expr          { Node node = makeNode("+", $1, $3);
         intRegisters[r] = 0;
     }
 
-    //maintain a table that maps IDENTIFIER to REGISTER USED.
+    //maintain table that maps IDENTIFIER to REGISTER USED.
 	
 	Map<String, String> registerTable = new HashMap<String, String>(); //key is id, value is reg used
 	
 	
-    //implement appropriate methods to store the mapping 
+    //methods to store the mapping 
     //and retrieve register for any given identifier from this table.
 	
 	public void setRegister(String id, String register) {
