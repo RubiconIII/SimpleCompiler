@@ -264,13 +264,6 @@ expr    :   expr PLUS expr          { Node node = makeNode("+", $1, $3);
 		String selectedValue = registerTable.get(id);
 		return selectedValue;
 		}
-		
-
-	
-
-    //You will generate 2 sections of assembly: .data and .text
-    //Store your assembly into appropriate section.
-    //Choose any datastructure to store your assembly.
 	
 	List<String> assemblyData = new ArrayList<String>();
 	List<String> assemblyText = new ArrayList<String>();
@@ -337,7 +330,6 @@ expr    :   expr PLUS expr          { Node node = makeNode("+", $1, $3);
             node = s2.pop();
             if (node.type == null && node.token.equals("=")) {
                 //this should only happen when we are at the last entry of the stack
-                //so we want to return the type "existingType"
                 continue;
             }
             if (node.token.equals("+") || node.token.equals("-")) {
