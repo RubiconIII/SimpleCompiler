@@ -1,4 +1,4 @@
-#A Simple Compiler
+# A Simple Compiler
 By: Curtis P. Hohl - 11/2/2017. 👨‍💻
 
 The language to be compiled is very simple.  It allows variable declarations (INT FLOAT STRING), 
