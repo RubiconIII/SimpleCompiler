@@ -1,5 +1,5 @@
 #A Simple Compiler
-By: Curtis P. Hohl - 11/2/2017. 💯
+By: Curtis P. Hohl - 11/2/2017. 👨‍💻
 
 The language to be compiled is very simple.  It allows variable declarations (INT FLOAT STRING), 
 simple addition and subtraction, standard operators (== != <= >= >  <), and PRINT.  Detailed syntax can be seen in scan.jflex.
